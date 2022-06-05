@@ -432,7 +432,7 @@
             </AnchorPane>
          </items>
       </SplitPane>
-      <SplitPane fx:id="spCatalog" dividerPositions="0.5" layoutX="191.0" layoutY="7.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="820.0" style="-fx-background-color: #8FBC8F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane fx:id="spCatalog" dividerPositions="0.5" layoutX="191.0" layoutY="7.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="820.0" style="-fx-background-color: #8FBC8F;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>
             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="741.0">
                <children>
@@ -530,7 +530,7 @@
             </AnchorPane>
          </items>
       </SplitPane>
-      <AnchorPane fx:id="apReport" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane fx:id="apReport" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <SplitMenuButton fx:id="splitMenuReport" mnemonicParsing="false" text="Выберите вид отчета" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
@@ -538,7 +538,7 @@
                 <MenuItem mnemonicParsing="false" onAction="#onReportProduct" text="отчет о принятых/проданных товарах" />
               </items>
             </SplitMenuButton>
-            <SplitPane fx:id="spReportClientProd" dividerPositions="0.5" orientation="VERTICAL" prefHeight="572.0" prefWidth="820.0" style="-fx-background-color: #8FBC8F;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <SplitPane fx:id="spReportClientProd" dividerPositions="0.5" orientation="VERTICAL" prefHeight="572.0" prefWidth="820.0" style="-fx-background-color: #8FBC8F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="819.0">
                      <children>
@@ -588,7 +588,7 @@
                   </AnchorPane>
               </items>
             </SplitPane>
-            <SplitPane fx:id="spReportProduct" dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: #8FBC8F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <SplitPane fx:id="spReportProduct" dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" style="-fx-background-color: #8FBC8F;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                      <children>

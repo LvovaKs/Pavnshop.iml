@@ -1107,7 +1107,7 @@ public class HelloController {
                         clientsClassStringCellDataFeatures.getValue().nameProperty());
             }
             tvTableDef.setItems(deffects);
-            if (product.getStatus().equals("продано")){
+            if (product.getStatus().equals("продано")||product.getStatus().equals("выкуплено")){
                 this.dDeleteProd.setDisable(true);
                 bUpdateDef.setVisible(false);
                 bDeleteDef.setVisible(false);
