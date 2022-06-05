@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="548.0" style="-fx-background-color: #8FBC8F;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pavnshop.NewProductController">
+   <children>
+      <VBox fx:id="pageProd" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lClient" text="Клиент: " VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="342.0" prefWidth="465.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="526.0" prefWidth="270.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Наименование">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfNameProd" prefHeight="26.0" prefWidth="190.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Краткое описание">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="taShortDesc" prefHeight="104.0" prefWidth="197.0" wrapText="true">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </TextArea>
+                        <Label fx:id="lProgressAddProd" alignment="CENTER" text="Срок хранения" textAlignment="CENTER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Spinner fx:id="spinShelfLife" onInputMethodTextChanged="#onDatePurch">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Spinner>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="343.0" prefWidth="257.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Дата заложения">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="50.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="dpDatePurch">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin></TextField>
+                        <Label text="Дата окончания срока хранения">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="dpDateEndSL">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin></TextField>
+                        <Label text="Цена заложения">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tfPricePurch">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Button fx:id="bLoadImgProd" mnemonicParsing="false" onAction="#onLoadImg" prefHeight="21.0" prefWidth="213.0" text="загрузить изображение" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <ImageView fx:id="ivImgProd" fitHeight="154.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="lErrorAddProd" alignment="CENTER" textAlignment="CENTER" />
+            <Button fx:id="bAddProduct" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onAddProd" text="Добавить товар" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

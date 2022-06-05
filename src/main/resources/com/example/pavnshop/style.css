@@ -1,0 +1,14 @@
+.root {
+-fx-background-color: cadetblue;
+}
+.label {
+-fx-font-size: 16;
+}
+.button {
+-fx-font-size: 12;
+-fx-text-fill: darkviolet;
+}
+.button:focused {
+ -fx-background-color: chartreuse;
+ -fx-text-fill: green;
+}
